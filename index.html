@@ -17,93 +17,428 @@
         <img src="./images/homepage/X icon.svg" alt="" />
       </div>
     </section>
-
     <!-- Header -->
-    <header>
-      <div class="container header__container">
-        <nav class="navbar">
-          <h1 class="logo">SHOP.CO</h1>
-          <ul class="nav__list">
-            <li><a href="#" class="nav__list__item">Shop</a></li>
-            <li><a href="#" class="nav__list__item">On Sale</a></li>
-            <li><a href="#" class="nav__list__item">New Arrivals</a></li>
-            <li><a href="#" class="nav__list__item">Brands</a></li>
-          </ul>
-          <form action="" class="header__form">
-            <button type="submit" class="header__form__btn">
-              <img src="./images/homepage/search.svg" alt="" />
-            </button>
-            <input
-              type="text"
-              placeholder="Search for products..."
-              class="header__input"
-            />
-          </form>
-          <div class="header__iconBox">
-            <img src="./images/homepage/cart.svg" alt="" />
-            <img src="./images/homepage/profile.svg" alt="" />
-          </div>
-        </nav>
+    <header class="header">
+      <div class="header__container container">
+        <!-- Logo -->
+        <a href="/" class="header__logo">
+          <h1>SHOP.CO</h1>
+        </a>
+
+        <!-- Navbar links -->
+        <ul class="header__navlinks">
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">On Sale</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Brands</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="header__search">
+          <input
+            type="text"
+            name="seach"
+            class="header__search__input"
+            placeholder="Search for products..."
+          />
+          <img
+            src="./images/homepage/search.svg"
+            alt="search"
+            class="header__search__icon"
+          />
+        </div>
+
+        <!-- Hero Bar -->
+        <div class="header__bar">
+          <a href="#" class="header__cart">
+            <img src="./images/homepage/cart.svg" alt="cart" />
+          </a>
+
+          <a href="#" class="header__user">
+            <img src="./images/homepage/profile.svg" alt="user" />
+          </a>
+        </div>
       </div>
     </header>
 
-    <!-- Footer -->
-    <footer>
-      <div class="footer__container container">
-        <div class="footer__flex">
-          <div class="footer__rows">
-            <h1 class="logo">SHOP.CO</h1>
-            <p class="footer__text">
-              We have clothes that suits your style and <br />
-              which you’re proud to wear. From <br />
-              women to men.
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__left">
+            <h2 class="hero__left__title">
+              FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h2>
+            <p class="hero__left__description">
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense
+              of style.
             </p>
-            <div class="footer__social__box">
-              <img src="./images/homepage/twitter.svg" alt="" />
-              <img src="./images/homepage/facebook.svg" alt="" />
-              <img src="./images/homepage/instagram.svg" alt="" />
-              <img src="./images/homepage/github.svg" alt="" />
+            <a href="#" class="hero__left__btn">Shop Now</a>
+
+            <div class="hero__left__results">
+              <div class="hero__left__result">
+                <h3 class="hero__left__result__number">200+</h3>
+                <p class="hero__left__result__title">International Brands</p>
+              </div>
+              <div class="hero__left__result">
+                <h3 class="hero__left__result__number">2,000+</h3>
+                <p class="hero__left__result__title">High-Quality Products</p>
+              </div>
+              <div class="hero__left__result">
+                <h3 class="hero__left__result__number">30,000+</h3>
+                <p class="hero__left__result__title">Happy Customers</p>
+              </div>
             </div>
           </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">Company</h4>
-            <p class="footer__link">About</p>
-            <p class="footer__link">Features</p>
-            <p class="footer__link">Works</p>
-            <p class="footer__link">Career</p>
-          </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">Help</h4>
-            <p class="footer__link">Customer Support</p>
-            <p class="footer__link">Delivery Details</p>
-            <p class="footer__link">Terms & Conditions</p>
-            <p class="footer__link">Privacy Policy</p>
-          </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">FAQ</h4>
-            <p class="footer__link">Account</p>
-            <p class="footer__link">Manage Deliveries</p>
-            <p class="footer__link">Orders</p>
-            <p class="footer__link">Payments</p>
-          </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">Resources</h4>
-            <p class="footer__link">Free eBooks</p>
-            <p class="footer__link">Development Tutorial</p>
-            <p class="footer__link">How to - Blog</p>
-            <p class="footer__link">Youtube Playlist</p>
+
+          <div class="hero__right">
+            <img
+              src="./images/homepage/hero-bg.jpg"
+              alt="hero"
+              class="hero__right__bg"
+            />
+            <img
+              src="./images/homepage/Vector.svg"
+              alt="vector"
+              class="hero__right__vector-1"
+            />
+            <img
+              src="./images/homepage/Vector.svg"
+              alt="vector"
+              class="hero__right__vector-2"
+            />
           </div>
         </div>
+      </section>
+
+      <!-- Banner -->
+      <section class="banner">
+        <div class="banner__container container">
+          <figure class="banner__item">
+            <img src="./images/homepage/versace.svg" alt="VERSAGE" />
+          </figure>
+          <figure class="banner__item">
+            <img src="./images/homepage/zara.svg" alt="ZARA" />
+          </figure>
+          <figure class="banner__item">
+            <img src="./images/homepage/gucci.svg" alt="GUCCI" />
+          </figure>
+          <figure class="banner__item">
+            <img src="./images/homepage/prada.svg" alt="PRADA" />
+          </figure>
+          <figure class="banner__item">
+            <img src="./images/homepage/calvin.svg" alt="Calvin Klein" />
+          </figure>
+        </div>
+      </section>
+
+      <!-- New Arrivals -->
+      <section class="new">
+        <div class="new__container container">
+          <h2 class="section__title">NEW ARRIVALS</h2>
+
+          <div class="card__wrapper">
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 7.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">T-SHIRT WITH TAPE DETAILS</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">4.5/5</p>
+              </div>
+
+              <p class="card__current__price">$120</p>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 8.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">SKINNY FIT JEANS</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">3.5/5</p>
+              </div>
+
+              <div class="card__bottom">
+                <p class="card__current__price">$240</p>
+                <p class="card__old__price">$260</p>
+                <div class="card__sale">
+                  <p class="card__sale__amount">-20%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 9.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">CHECKERED SHIRT</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">4.5/5</p>
+              </div>
+
+              <p class="card__current__price">$180</p>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 10.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">SLEEVE STRIPED T-SHIRT</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">4.5/5</p>
+              </div>
+
+              <div class="card__bottom">
+                <p class="card__current__price">$130</p>
+                <p class="card__old__price">$160</p>
+                <div class="card__sale">
+                  <p class="card__sale__amount">-30%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="primary-btn">View All</button>
+        </div>
+      </section>
+
+      <hr class="section__line" />
+
+      <!-- Top Selling -->
+      <section class="top">
+        <div class="top__container container">
+          <h2 class="section__title">top selling</h2>
+
+          <div class="card__wrapper">
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 7.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">T-SHIRT WITH TAPE DETAILS</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">4.5/5</p>
+              </div>
+
+              <p class="card__current__price">$120</p>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 8.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">SKINNY FIT JEANS</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">3.5/5</p>
+              </div>
+
+              <div class="card__bottom">
+                <p class="card__current__price">$240</p>
+                <p class="card__old__price">$260</p>
+                <div class="card__sale">
+                  <p class="card__sale__amount">-20%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 9.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">CHECKERED SHIRT</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">4.5/5</p>
+              </div>
+
+              <p class="card__current__price">$180</p>
+            </div>
+
+            <div class="card">
+              <div class="card__image">
+                <img src="./images/homepage/image 10.png" alt="T-shirt" />
+              </div>
+
+              <p class="card__title">SLEEVE STRIPED T-SHIRT</p>
+
+              <div class="card__review">
+                <div class="card__review__stars">
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                  <img src="./images/homepage/Star 1.svg" alt="star" />
+                </div>
+                <p class="card__review__score">4.5/5</p>
+              </div>
+
+              <div class="card__bottom">
+                <p class="card__current__price">$130</p>
+                <p class="card__old__price">$160</p>
+                <div class="card__sale">
+                  <p class="card__sale__amount">-30%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="primary-btn">View All</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__top__item">
+            <!-- Logo -->
+            <a href="/" class="footer__logo">
+              <h2>SHOP.CO</h2>
+            </a>
+
+            <p class="footer__decription">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </p>
+
+            <div class="footer__social">
+              <div class="footer__social__item">
+                <img src="./icons/twitter.svg" alt="twitter" />
+              </div>
+              <div class="footer__social__item">
+                <img src="./icons/facebook.svg" alt="facebook" />
+              </div>
+              <div class="footer__social__item">
+                <img src="./icons/instagram.svg" alt="instagram" />
+              </div>
+              <div class="footer__social__item">
+                <img src="./icons/github.svg" alt="github" />
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Company</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">About</a></li>
+              <li><a href="#" class="footer__navlink">Features</a></li>
+              <li><a href="#" class="footer__navlink">Works</a></li>
+              <li><a href="#" class="footer__navlink">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Company</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">About</a></li>
+              <li><a href="#" class="footer__navlink">Features</a></li>
+              <li><a href="#" class="footer__navlink">Works</a></li>
+              <li><a href="#" class="footer__navlink">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Company</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">About</a></li>
+              <li><a href="#" class="footer__navlink">Features</a></li>
+              <li><a href="#" class="footer__navlink">Works</a></li>
+              <li><a href="#" class="footer__navlink">Career</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Company</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">About</a></li>
+              <li><a href="#" class="footer__navlink">Features</a></li>
+              <li><a href="#" class="footer__navlink">Works</a></li>
+              <li><a href="#" class="footer__navlink">Career</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="section__line" />
+
         <div class="footer__bottom">
-          <p class="footer__bottom__text">
-            Shop.co © 2000-2023, All Rights Reserved
-          </p>
-          <div class="pay__box">
-            <img src="./images/homepage/visa.svg" alt="" />
-            <img src="./images/homepage/mastercard.svg" alt="" />
-            <img src="./images/homepage/paypal.svg" alt="" />
-            <img src="./images/homepage/pay.svg" alt="" />
-            <img src="./images/homepage/pay google.svg" alt="" />
+          <h3 class="footer__copyright">© 2000-2021, All rights reserved</h3>
+
+          <div class="footer__payment">
+            <div class="footer__payment__item">
+              <img src="./icons/Visa.svg" alt="Visa" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="./icons/Mastercard.svg" alt="Mastercard" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="./icons/Paypal.svg" alt="Paypal" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="./icons/Apple Pay.svg" alt="Apple Pay" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="./icons/G Pay.svg" alt="Google Pay" />
+            </div>
           </div>
         </div>
       </div>

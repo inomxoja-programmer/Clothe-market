@@ -1,8 +1,37 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* Integral CF */
+@font-face {
+	font-family: 'Integral';
+	src: url('../fonts/Integral-CF-Font-Family/Fontspring-DEMO-integralcf-bold.otf');
 }
+
+/* Satoshi Regular */
+@font-face {
+	font-family: 'Satoshi Regular';
+	src: url('../fonts/satoshi-webfont/Satoshi-Regular.woff');
+}
+
+/* Satoshi Medium */
+@font-face {
+	font-family: 'Satoshi Medium';
+	src: url('../fonts/satoshi-webfont/Satoshi-Medium.woff');
+}
+
+/* Satoshi Bold */
+@font-face {
+	font-family: 'Satoshi Bold';
+	src: url('../fonts/satoshi-webfont/Satoshi-Bold.woff');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Satoshi Medium', sans-serif;
+}
+
 
 li {
   list-style: none;
@@ -17,6 +46,32 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 0 100px;
+}
+
+.section__title {
+	font-family: 'Integral', sans-serif;
+	font-size: 48px;
+	line-height: 100%;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.section__line {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid #0000001a;
+}
+
+/* Buttons */
+.primary-btn {
+	padding: 15px 80px;
+	border: 1px solid #0000001a;
+	border-radius: 62px;
+	background-color: #ffffff;
+	font-family: 'Satoshi Medium', sans-serif;
+	font-size: 16px;
+	color: #000000;
 }
 
 /* Header top */
@@ -49,157 +104,415 @@ a {
 }
 
 /* Header */
-
-.navbar {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+.header__container {
+	padding: 24px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.logo {
-  font-family: "Integral CF", sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  vertical-align: middle;
+.header__logo {
+	font-family: 'Integral', sans-serif;
+	font-size: 16px;
+	color: #000000;
+	text-decoration: none;
 }
 
-.nav__list {
-  display: flex;
-  gap: 24px;
+.header__navlinks {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	list-style: none;
 }
 
-.nav__list__item {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #000000;
+.header__navlinks li a {
+	font-family: 'Satoshi Regular';
+	font-size: 16px;
+	text-decoration: none;
+	color: #000000;
 }
 
-.header__form {
-  width: 577px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  background-color: #f0f0f0;
-  padding: 12px 0 12px 16px;
-  border-radius: 62px;
+.header__search {
+	position: relative;
 }
 
-.header__form__btn {
-  background: none;
-  border: none;
-  cursor: pointer;
+.header__search__input {
+	padding-left: 52px;
+	width: 577px;
+	height: 48px;
+	outline: none;
+	border: none;
+	border-radius: 62px;
+	background-color: #f0f0f0;
+	color: #00000066;
+	font-family: 'Satoshi Regular';
+	font-size: 16px;
 }
 
-.header__input {
-  width: 500px;
-  font-family: "Satoshi", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #00000066;
-  border: none;
-  background: none;
-  outline: none;
+.header__search__icon {
+	position: absolute;
+	top: 12px;
+	left: 16px;
 }
 
-.header__iconBox {
-  display: flex;
-  gap: 14px;
+.header__bar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 14px;
 }
 
-.header__iconBox img {
-  cursor: pointer;
+
+/* Hero */
+.hero {
+	background-color: #f2f0f1;
 }
+
+.hero__container {
+	position: relative;
+	height: 663px;
+}
+
+.hero__left {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	flex-direction: column;
+	gap: 32px;
+	z-index: 1;
+}
+
+.hero__left__title {
+	font-family: 'Integral', sans-serif;
+	font-size: 64px;
+}
+
+.hero__left__description {
+	font-family: 'Satoshi Regular', sans-serif;
+	font-size: 16px;
+	color: #00000099;
+}
+
+.hero__left__btn {
+	padding: 15px 67.5px;
+	border: none;
+	border-radius: 62px;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+.hero__right__bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.hero__left__results {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 64px;
+}
+
+.hero__left__result__number {
+	font-family: 'Satoshi Bold';
+	font-size: 40px;
+	color: #000000;
+}
+
+.hero__left__result__title {
+	font-family: 'Satoshi Regular';
+	font-size: 16px;
+	color: #00000099;
+}
+
+.hero__right__vector-1 {
+	position: absolute;
+	width: 104px;
+	height: 104px;
+	top: 86px;
+	right: 81px;
+}
+
+.hero__right__vector-2 {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	top: 297px;
+	right: 634px;
+}
+
+/* Banner */
+.banner {
+	background-color: #000000;
+}
+
+.banner__container {
+	height: 122px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 106px;
+}
+
+/* New Arrivals */
+.new__container {
+	height: 100vh;
+	text-align: center;
+}
+
+.new__container .section__title {
+	margin-top: 72px;
+	margin-bottom: 55px;
+}
+
+.card__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 50px;
+}
+
+.card {
+	width: 298px;
+	height: 430px;
+}
+
+.card__image {
+	width: 295px;
+	height: 298px;
+	margin-bottom: 16px;
+}
+
+.card__image img {
+	size: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.card__title {
+	font-family: 'Satoshi Bold', sans-serif;
+	text-transform: capitalize;
+	font-size: 20px;
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.card__review {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 13px;
+	margin-bottom: 8px;
+}
+
+.card__review__stars {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.card__review__stars img {
+	width: 18.49px;
+	height: 18.49px;
+}
+
+.card__review__score {
+	font-family: 'Satoshi Regular', sans-serif;
+	font-size: 14px;
+}
+
+.card__current__price {
+	font-family: 'Satoshi Bold', sans-serif;
+	font-size: 24px;
+	text-align: left;
+}
+
+.card__bottom {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 10px;
+}
+
+.card__old__price {
+	font-family: 'Satoshi Bold', sans-serif;
+	font-size: 24px;
+	color: #00000066;
+	text-decoration: line-through;
+}
+
+.card__sale {
+	width: 68px;
+	height: 28px;
+	border: none;
+	border-radius: 62px;
+	background-color: #ff33331a;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card__sale__amount {
+	font-family: 'Satoshi Medium', sans-serif;
+	font-size: 12px;
+	color: #ff3333;
+}
+
+/* Top */
+.top__container {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.top__container .section__title {
+	margin-top: 65px;
+	margin-bottom: 55px;
+}
+
+/* Browse */
+.browse__container {
+	text-align: center;
+	height: 886px;
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 40px;
+}
+
+.browse__container .section__title {
+	padding: 70px 64px;
+}
+
 
 /* Footer */
-
-footer {
-  background-color: #f0f0f0;
-}
-
-footer h1 {
-  font-size: 33.5px;
-  margin-bottom: 25px;
+.footer {
+	background-color: #f0f0f0;
 }
 
 .footer__container {
-  padding-top: 140px;
-  padding-bottom: 88px;
+	padding-top: 140px;
+	padding-bottom: 88px;
 }
 
-.footer__flex {
-  display: flex;
-  gap: 113.5px;
-  align-items: flex-start;
-  padding-bottom: 50px;
-  border-bottom: 1px solid #0000001a;
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 113.5px;
+	margin-bottom: 50px;
 }
 
-.footer__text {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  letter-spacing: 0px;
-  margin-bottom: 35px;
-  color: #00000099;
+.footer__top__item:first-child {
+	max-width: 248px;
 }
 
-.footer__title {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 26px;
-  color: black;
+.footer__logo {
+	font-family: 'Integral', sans-serif;
+	font-weight: 700;
+	font-size: 33.45px;
+	color: #000000;
+	text-decoration: none;
 }
 
-.footer__link {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0px;
-  margin-bottom: 20px;
-  color: #00000099;
+.footer__decription {
+	max-width: 248px;
+	font-family: 'Satoshi Regular', sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+	color: #00000099;
+	margin-top: 25px;
+	margin-bottom: 35px;
 }
 
-.footer__social__box {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+.footer__social {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	gap: 12px;
+}
+
+.footer__social__item {
+	width: 28px;
+	height: 28px;
+	border: 1px solid #00000033;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__social__item:nth-child(2) {
+	background-color: #000000;
+}
+
+.footer__navlink__title {
+	font-family: 'Satoshi Medium', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	letter-spacing: 3px;
+	color: #000000;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+
+.footer__navlinks {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-direction: column;
+	list-style: none;
+}
+
+.footer__navlink {
+	font-family: 'Satoshi Regular', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 19px;
+	color: #00000099;
+	text-decoration: none;
 }
 
 .footer__bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
 }
 
-.footer__bottom p  {
-    cursor: pointer;
+.footer__copyright {
+	font-family: 'Satoshi Regular', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	color: #00000099;
+	text-decoration: none;
 }
 
-.footer__bottom img {
-    cursor: pointer;
+.footer__payment {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
 }
 
-.footer__bottom__text {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #00000099;
+.footer__payment__item {
+	width: 46px;
+	height: 30px;
+	border: 0.22px solid #ffffff;
+	border-radius: 5.38px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	cursor: pointer;
 }
