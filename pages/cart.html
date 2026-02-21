@@ -15,37 +15,51 @@
           >Sign up and get 20% off to your first order.
           <span class="header__top__marked">Sign Up Now</span></a
         >
-        <img src="./images/homepage/X icon.svg" alt="" />
+        <img src="../images/homepage/X icon.svg" alt="" />
       </div>
     </section>
 
-    <main></main>
     <!-- Header -->
-    <header>
-      <div class="container header__container">
-        <nav class="navbar">
-          <h1 class="logo">SHOP.CO</h1>
-          <ul class="nav__list">
-            <li><a href="#" class="nav__list__item">Shop</a></li>
-            <li><a href="#" class="nav__list__item">On Sale</a></li>
-            <li><a href="#" class="nav__list__item">New Arrivals</a></li>
-            <li><a href="#" class="nav__list__item">Brands</a></li>
-          </ul>
-          <form action="" class="header__form">
-            <button type="submit" class="header__form__btn">
-              <img src="./images/homepage/search.svg" alt="" />
-            </button>
-            <input
-              type="text"
-              placeholder="Search for products..."
-              class="header__input"
-            />
-          </form>
-          <div class="header__iconBox">
-            <img src="./images/homepage/cart.svg" alt="" />
-            <img src="./images/homepage/profile.svg" alt="" />
-          </div>
-        </nav>
+    <header class="header">
+      <div class="header__container container">
+        <!-- Logo -->
+        <a href="/" class="header__logo">
+          <h1>SHOP.CO</h1>
+        </a>
+
+        <!-- Navbar links -->
+        <ul class="header__navlinks">
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">On Sale</a></li>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Brands</a></li>
+        </ul>
+
+        <!-- Search Bar -->
+        <div class="header__search">
+          <input
+            type="text"
+            name="seach"
+            class="header__search__input"
+            placeholder="Search for products..."
+          />
+          <img
+            src="../images/homepage/search.svg"
+            alt="search"
+            class="header__search__icon"
+          />
+        </div>
+
+        <!-- Hero Bar -->
+        <div class="header__bar">
+          <a href="#" class="header__cart">
+            <img src="../images/homepage/cart.svg" alt="cart" />
+          </a>
+
+          <a href="#" class="header__user">
+            <img src="../images/homepage/profile.svg" alt="user" />
+          </a>
+        </div>
       </div>
     </header>
 
@@ -53,194 +67,250 @@
 
     <!-- ********** -->
     <main>
-      <div class="container">
-        <nav class="breadcrumb">Home > <span>Cart</span></nav>
-        <h1 class="page-title">YOUR CART</h1>
-
-        <div class="cart-layout">
-          <div class="cart-items">
-            <div class="product-card">
-              <img
-                src="../images/4 qism/1futbolka.svg"
-                alt="Graphic T-shirt"
-                class="product-img"
-              />
-              <div class="product-info">
-                <div class="product-header">
-                  <h3>Gradient Graphic T-shirt</h3>
-                  <img
-                    src="../images/4 qism/musr.svg"
-                    alt=""
-                    class="delete-btn"
-                  />
-                </div>
-                <p>Size: <span>Large</span></p>
-                <p>Color: <span>White</span></p>
-                <div class="product-footer">
-                  <span class="price">$145</span>
-                  <div class="quantity-controls">
-                    <button>−</button>
-                    <span>1</span>
-                    <button>+</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card">
-              <img
-                src="../images/4 qism/2rubashka.svg"
-                alt="Checkered Shirt"
-                class="product-img"
-              />
-              <div class="product-info">
-                <div class="product-header">
-                  <h3>Checkered Shirt</h3>
-                  <img
-                    src="../images/4 qism/musr.svg"
-                    alt=""
-                    class="delete-btn"
-                  />
-                </div>
-                <p>Size: <span>Medium</span></p>
-                <p>Color: <span>Red</span></p>
-                <div class="product-footer">
-                  <span class="price">$180</span>
-                  <div class="quantity-controls">
-                    <button>−</button>
-                    <span>1</span>
-                    <button>+</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="product-card last">
-              <img
-                src="../images/4 qism/3djinsi.svg"
-                alt="Skinny Fit Jeans"
-                class="product-img"
-              />
-              <div class="product-info">
-                <div class="product-header">
-                  <h3>Skinny Fit Jeans</h3>
-                  <img
-                    src="../images/4 qism/musr.svg"
-                    alt=""
-                    class="delete-btn"
-                  />
-                </div>
-                <p>Size: <span>Large</span></p>
-                <p>Color: <span>Blue</span></p>
-                <div class="product-footer">
-                  <span class="price">$240</span>
-                  <div class="quantity-controls">
-                    <button>−</button>
-                    <span>1</span>
-                    <button>+</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="order-summary">
-            <h2>Order Summary</h2>
-            <div class="summary-row">
-              <span>Subtotal</span>
-              <span class="bold">$565</span>
-            </div>
-            <div class="summary-row">
-              <span>Discount (-20%)</span>
-              <span class="bold red">-$113</span>
-            </div>
-            <div class="summary-row">
-              <span>Delivery Fee</span>
-              <span class="bold">$15</span>
-            </div>
-            <hr />
-            <div class="summary-row total">
-              <span>Total</span>
-              <span class="bold-total">$467</span>
-            </div>
-
-            <div class="promo-code">
-              <div class="input-wrapper">
+      <section class="cart">
+        <div class="container cart__container">
+          <nav class="breadcrumb">Home > <span>Cart</span></nav>
+          <h1 class="page-title">YOUR CART</h1>
+  
+          <div class="cart-layout">
+            <div class="cart-items">
+              <div class="product-card">
                 <img
-                  src="../images/4 qism/promo.svg"
-                  alt=""
-                  class="promo-icon"
+                  src="../images/4 qism/1futbolka.svg"
+                  alt="Graphic T-shirt"
+                  class="product-img"
                 />
-                <input type="text" placeholder="Add promo code" />
+                <div class="product-info">
+                  <div class="product-header">
+                    <h3>Gradient Graphic T-shirt</h3>
+                    <img
+                      src="../images/4 qism/musr.svg"
+                      alt=""
+                      class="delete-btn"
+                    />
+                  </div>
+                  <p>Size: <span>Large</span></p>
+                  <p>Color: <span>White</span></p>
+                  <div class="product-footer">
+                    <span class="price">$145</span>
+                    <div class="quantity-controls">
+                      <button>−</button>
+                      <span>1</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <button class="apply-btn">Apply</button>
+  
+              <div class="product-card">
+                <img
+                  src="../images/4 qism/2rubashka.svg"
+                  alt="Checkered Shirt"
+                  class="product-img"
+                />
+                <div class="product-info">
+                  <div class="product-header">
+                    <h3>Checkered Shirt</h3>
+                    <img
+                      src="../images/4 qism/musr.svg"
+                      alt=""
+                      class="delete-btn"
+                    />
+                  </div>
+                  <p>Size: <span>Medium</span></p>
+                  <p>Color: <span>Red</span></p>
+                  <div class="product-footer">
+                    <span class="price">$180</span>
+                    <div class="quantity-controls">
+                      <button>−</button>
+                      <span>1</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="product-card last">
+                <img
+                  src="../images/4 qism/3djinsi.svg"
+                  alt="Skinny Fit Jeans"
+                  class="product-img"
+                />
+                <div class="product-info">
+                  <div class="product-header">
+                    <h3>Skinny Fit Jeans</h3>
+                    <img
+                      src="../images/4 qism/musr.svg"
+                      alt=""
+                      class="delete-btn"
+                    />
+                  </div>
+                  <p>Size: <span>Large</span></p>
+                  <p>Color: <span>Blue</span></p>
+                  <div class="product-footer">
+                    <span class="price">$240</span>
+                    <div class="quantity-controls">
+                      <button>−</button>
+                      <span>1</span>
+                      <button>+</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <button class="checkout-btn">
-              Go to Checkout
-              <span class="arrow">→</span>
-            </button>
+  
+            <div class="order-summary">
+              <h2>Order Summary</h2>
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span class="bold">$565</span>
+              </div>
+              <div class="summary-row">
+                <span>Discount (-20%)</span>
+                <span class="bold red">-$113</span>
+              </div>
+              <div class="summary-row">
+                <span>Delivery Fee</span>
+                <span class="bold">$15</span>
+              </div>
+              <hr />
+              <div class="summary-row total">
+                <span>Total</span>
+                <span class="bold-total">$467</span>
+              </div>
+  
+              <div class="promo-code">
+                <div class="input-wrapper">
+                  <img
+                    src="../images/4 qism/promo.svg"
+                    alt=""
+                    class="promo-icon"
+                  />
+                  <input type="text" placeholder="Add promo code" />
+                </div>
+                <button class="apply-btn">Apply</button>
+              </div>
+  
+              <button class="checkout-btn">
+                Go to Checkout
+                <span class="arrow">→</span>
+              </button>
+            </div>
           </div>
+
+          <!-- Offer (Postion) -->
+            <div class="offer__flex">
+              <h1 class="section__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1> 
+              <div class="offer__btn__box">
+                <button class="offer__btn"><img src="../images/homepage/email.svg" alt="">
+                Enter your email address</button>
+                <button class="offer__btn">Subscribe to Newsletter</button>
+              </div> 
+            </div>
         </div>
-      </div>
+      </section>
     </main>
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__flex">
-          <div class="footer__rows">
-            <h1 class="logo">SHOP.CO</h1>
-            <p class="footer__text">
-              We have clothes that suits your style and <br />
-              which you’re proud to wear. From <br />
-              women to men.
+        <div class="footer__top">
+          <div class="footer__top__item">
+            <!-- Logo -->
+            <a href="/" class="footer__logo">
+              <h2>SHOP.CO</h2>
+            </a>
+
+            <p class="footer__decription">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
             </p>
-            <div class="footer__social__box">
-              <img src="./images/homepage/twitter.svg" alt="" />
-              <img src="./images/homepage/facebook.svg" alt="" />
-              <img src="./images/homepage/instagram.svg" alt="" />
-              <img src="./images/homepage/github.svg" alt="" />
+
+            <div class="footer__social">
+              <div class="footer__social__item">
+                <img src="../images/homepage/twitter.svg" alt="twitter" />
+              </div>
+              <div class="footer__social__item">
+                <img src="../images/homepage/facebook.svg" alt="facebook" />
+              </div>
+              <div class="footer__social__item">
+                <img src="../images/homepage/instagram.svg" alt="instagram" />
+              </div>
+              <div class="footer__social__item">
+                <img src="../images/homepage/github.svg" alt="github" />
+              </div>
             </div>
           </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">Company</h4>
-            <p class="footer__link">About</p>
-            <p class="footer__link">Features</p>
-            <p class="footer__link">Works</p>
-            <p class="footer__link">Career</p>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Company</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">About</a></li>
+              <li><a href="#" class="footer__navlink">Features</a></li>
+              <li><a href="#" class="footer__navlink">Works</a></li>
+              <li><a href="#" class="footer__navlink">Career</a></li>
+            </ul>
           </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">Help</h4>
-            <p class="footer__link">Customer Support</p>
-            <p class="footer__link">Delivery Details</p>
-            <p class="footer__link">Terms & Conditions</p>
-            <p class="footer__link">Privacy Policy</p>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Help</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">Customer Support</a></li>
+              <li><a href="#" class="footer__navlink">Delivery Details</a></li>
+              <li>
+                <a href="#" class="footer__navlink">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="footer__navlink">Privacy Policy</a></li>
+            </ul>
           </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">FAQ</h4>
-            <p class="footer__link">Account</p>
-            <p class="footer__link">Manage Deliveries</p>
-            <p class="footer__link">Orders</p>
-            <p class="footer__link">Payments</p>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">FAQ</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">Account</a></li>
+              <li><a href="#" class="footer__navlink">Manage Deliveries</a></li>
+              <li><a href="#" class="footer__navlink">Orders</a></li>
+              <li><a href="#" class="footer__navlink">Payments</a></li>
+            </ul>
           </div>
-          <div class="footer__rows">
-            <h4 class="footer__title">Resources</h4>
-            <p class="footer__link">Free eBooks</p>
-            <p class="footer__link">Development Tutorial</p>
-            <p class="footer__link">How to - Blog</p>
-            <p class="footer__link">Youtube Playlist</p>
+
+          <div class="footer__top__item">
+            <h3 class="footer__navlink__title">Resources</h3>
+
+            <ul class="footer__navlinks">
+              <li><a href="#" class="footer__navlink">Free eBooks</a></li>
+              <li>
+                <a href="#" class="footer__navlink">Development Tutorial</a>
+              </li>
+              <li><a href="#" class="footer__navlink">How to - Blog</a></li>
+              <li><a href="#" class="footer__navlink">Youtube Playlist</a></li>
+            </ul>
           </div>
         </div>
+
+        <hr class="section__line" />
+
         <div class="footer__bottom">
-          <p class="footer__bottom__text">
-            Shop.co © 2000-2023, All Rights Reserved
-          </p>
-          <div class="pay__box">
-            <img src="./images/homepage/visa.svg" alt="" />
-            <img src="./images/homepage/mastercard.svg" alt="" />
-            <img src="./images/homepage/paypal.svg" alt="" />
-            <img src="./images/homepage/pay.svg" alt="" />
-            <img src="./images/homepage/pay google.svg" alt="" />
+          <h3 class="footer__copyright">© 2000-2021, All rights reserved</h3>
+
+          <div class="footer__payment">
+            <div class="footer__payment__item">
+              <img src="../images/homepage/Visa.svg" alt="Visa" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="../images/homepage/Mastercard.svg" alt="Mastercard" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="../images/homepage/Paypal.svg" alt="Paypal" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="../images/homepage/pay.svg" alt="Apple Pay" />
+            </div>
+            <div class="footer__payment__item">
+              <img src="../images/homepage/pay google.svg" alt="Google Pay" />
+            </div>
           </div>
         </div>
       </div>

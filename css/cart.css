@@ -1,3 +1,14 @@
+.cart__container {
+  margin-bottom: 170px;
+  position: relative;
+}
+
+.offer__flex {
+  top: 730px;
+}
+
+
+
 .breadcrumb {
   color: #888;
   margin-bottom: 20px;
